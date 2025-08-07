@@ -1,0 +1,17 @@
+{
+  "name": "neural-benchmark",
+  "version": "1.0.0",
+  "description": "Benchmark suite for Neural Translator",
+  "main": "benchmark.js",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "test": "node benchmark.js",
+    "test:neural": "node test-neural-only.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "MIT"
+}

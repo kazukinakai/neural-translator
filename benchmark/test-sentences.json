@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2024-08-07",
+    "description": "Standardized test sentences for translation benchmark"
+  },
+  "sentences": [
+    {
+      "id": 1,
+      "type": "greeting",
+      "length": "short",
+      "ja": "こんにちは、今日はいい天気ですね。",
+      "en_reference": "Hello, it's nice weather today."
+    },
+    {
+      "id": 2,
+      "type": "technical",
+      "length": "short",
+      "ja": "このアプリケーションは高速に動作します。",
+      "en_reference": "This application runs fast."
+    },
+    {
+      "id": 3,
+      "type": "business",
+      "length": "medium",
+      "ja": "明日の会議は午後3時から5時まで、第2会議室で行われます。",
+      "en_reference": "Tomorrow's meeting will be held from 3 PM to 5 PM in Conference Room 2."
+    },
+    {
+      "id": 4,
+      "type": "technical",
+      "length": "medium",
+      "ja": "人工知能の発展により、私たちの生活は大きく変わりつつあります。",
+      "en_reference": "With the development of artificial intelligence, our lives are changing significantly."
+    },
+    {
+      "id": 5,
+      "type": "casual",
+      "length": "medium",
+      "ja": "昨日見た映画はとても面白かったので、友達にもおすすめしたいと思います。",
+      "en_reference": "The movie I watched yesterday was very interesting, so I'd like to recommend it to my friends."
+    },
+    {
+      "id": 6,
+      "type": "technical",
+      "length": "long",
+      "ja": "機械学習モデルの性能を向上させるためには、適切なデータの前処理と特徴量エンジニアリングが不可欠です。",
+      "en_reference": "To improve the performance of machine learning models, proper data preprocessing and feature engineering are essential."
+    },
+    {
+      "id": 7,
+      "type": "news",
+      "length": "long",
+      "ja": "政府は新しい経済対策を発表し、中小企業への支援を強化することを明らかにしました。",
+      "en_reference": "The government announced new economic measures and revealed plans to strengthen support for small and medium-sized enterprises."
+    },
+    {
+      "id": 8,
+      "type": "academic",
+      "length": "long",
+      "ja": "この研究結果は、従来の理論に新たな視点を提供し、今後の研究に大きな影響を与える可能性があります。",
+      "en_reference": "These research results provide new perspectives on conventional theories and may have a significant impact on future research."
+    },
+    {
+      "id": 9,
+      "type": "instruction",
+      "length": "medium",
+      "ja": "ソフトウェアをインストールする前に、システム要件を確認してください。",
+      "en_reference": "Please check the system requirements before installing the software."
+    },
+    {
+      "id": 10,
+      "type": "complex",
+      "length": "very_long",
+      "ja": "グローバル化が進む現代社会において、異文化理解とコミュニケーション能力は、ビジネスだけでなく日常生活においても重要性を増しています。",
+      "en_reference": "In today's increasingly globalized society, cross-cultural understanding and communication skills are becoming more important not only in business but also in daily life."
+    }
+  ]
+}

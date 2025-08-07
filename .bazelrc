@@ -1,0 +1,35 @@
+# Neural Translator Bazel configuration
+
+# Common settings
+build --watchfs
+test --test_output=all
+test --test_output=streamed
+build --sandbox_fake_hostname
+build --sandbox_fake_username
+build --verbose_failures
+
+# macOS M4 optimization (Apple Silicon)
+build:macos-m4 --platforms=@platforms//os:macos
+build:macos-m4 --cpu=arm64
+build:macos-m4 --compilation_mode=opt
+
+# Tauri build settings
+build:tauri --sandbox_fake_hostname
+build:tauri --sandbox_fake_username
+build:tauri --spawn_strategy=standalone
+build:tauri --genrule_strategy=standalone
+
+# Test configuration
+test --test_env=NODE_ENV=test
+test --test_env=CI=true
+
+# Development build
+build:dev --compilation_mode=dbg
+build:dev --watchfs
+
+# Production build
+build:prod --compilation_mode=opt
+build:prod --strip=always
+
+# Default config
+build --config=macos-m4
