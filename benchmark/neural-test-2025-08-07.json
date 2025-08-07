@@ -1,5 +1,48 @@
 {
-  "test_date": "2025-08-07T05:12:57.354Z",
-  "model": "aya:8b",
-  "results": []
+  "test_date": "2025-08-07T09:31:27.388Z",
+  "model": "qwen2.5:3b",
+  "results": [
+    {
+      "sentence_id": 1,
+      "length": "short",
+      "times": [
+        21173,
+        327,
+        369
+      ],
+      "average_ms": 7290,
+      "min_ms": 327,
+      "max_ms": 21173
+    },
+    {
+      "sentence_id": 4,
+      "length": "medium",
+      "times": [
+        861,
+        737,
+        676
+      ],
+      "average_ms": 758,
+      "min_ms": 676,
+      "max_ms": 861
+    },
+    {
+      "sentence_id": 8,
+      "length": "long",
+      "times": [
+        1216,
+        829,
+        867
+      ],
+      "average_ms": 971,
+      "min_ms": 829,
+      "max_ms": 1216
+    }
+  ],
+  "summary": {
+    "average_ms": 3006,
+    "min_ms": 327,
+    "max_ms": 21173,
+    "sample_count": 9
+  }
 }

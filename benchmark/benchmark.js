@@ -21,11 +21,11 @@ const testData = JSON.parse(
 // Configuration
 const CONFIG = {
   NEURAL_API: 'http://localhost:11434/api/generate', // Ollama API
-  NEURAL_MODEL: 'aya:8b',
+  NEURAL_MODEL: 'qwen2.5:3b', // Use installed model
   DEEPL_URL: 'https://www.deepl.com/translator',
   GOOGLE_URL: 'https://translate.google.com',
-  RUNS_PER_SERVICE: 5,
-  WARMUP_RUNS: 2, // Warmup runs to exclude from timing
+  RUNS_PER_SERVICE: 3, // Reduced for faster testing
+  WARMUP_RUNS: 1, // Reduced for faster testing
 };
 
 // Results storage
@@ -268,15 +268,15 @@ async function runBenchmark() {
     const checkResponse = await fetch('http://localhost:11434/api/tags');
     if (!checkResponse.ok) throw new Error('Ollama not running');
     
-    results.services.neural_aya = await benchmarkService(
-      'Neural (Aya 23 8B)',
+    results.services.neural_qwen = await benchmarkService(
+      'Neural (Qwen 2.5 3B)',
       (text) => testNeural(text),
       testSentences
     );
   } catch (error) {
     console.error('❌ Neural test failed:', error.message);
     console.log('   Make sure Ollama is running: ollama serve');
-    results.services.neural_aya = { error: error.message };
+    results.services.neural_qwen = { error: error.message };
   }
   
   // Test web services with Puppeteer

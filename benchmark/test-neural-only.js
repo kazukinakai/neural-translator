@@ -15,11 +15,11 @@ const testData = JSON.parse(
 
 const CONFIG = {
   NEURAL_API: 'http://localhost:11434/api/generate',
-  NEURAL_MODEL: 'aya:8b',
+  NEURAL_MODEL: 'qwen2.5:3b',
   RUNS: 3
 };
 
-async function testNeural(text, model = 'aya:8b') {
+async function testNeural(text, model = 'qwen2.5:3b') {
   const prompt = `Translate the following Japanese text to English. Only provide the translation, no explanations:\n\n${text}`;
   
   const startTime = performance.now();
